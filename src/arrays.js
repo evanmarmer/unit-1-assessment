@@ -69,12 +69,13 @@ function everyOtherItem(items) {
 //   findWordsStartingWith(['apple', 'banana', 'kiwi', 'pear', 'bacon'], 'b');
 //   => [1, 4]
 function findWordsStartingWith(words, letter) {
-  newArr = []
+  let newArr = []
   for(let i = 0; i < words.length; i++){
     if(words[i].startsWith(letter)){
       newArr.push(i)
     }
   }
+  
   return newArr
 }
 
